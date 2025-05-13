@@ -78,5 +78,33 @@ def add_client(clients):
     except ValueError:
         print("Invalid input, Please enter a valid age.")
 
-add_client(clients)
+def delete_client(clients):
+    """Delete a client by name"""
+    original_len=len(clients)
+    name=input("Enter client name to delete: ").strip().lower()
+    clients[:]=[client for client in clients if client["name"].lower()!=name]
+    if len(clients)<original_len:
+         print(f"client {name} deleted successfully.")
+    else:
+         print("client not found ")
+    if not clients:
+        print("No clients found.")
+        
+def update(clients):
+     """Update client for name;age;email;active or not"""
+     name=input("Enter client name to update: ").strip().lower()
+     for client in clients:
+          if client["name.".lower()==name:
+                    print("client found ")
+                    ]
+     
+
+
+
+
+
+     
+                
+
+
 
