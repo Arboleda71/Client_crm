@@ -94,17 +94,17 @@ def update(clients):
      """Update client for name;age;email;active or not"""
      name=input("Enter client name to update: ").strip().lower()
      for client in clients:
-          if client["name.".lower()==name:
-                    print("client found ")
-                    ]
-     
+          if client["name"].lower()==name:
+               print("Client found.")
+               print("Enter if you don't want to update a client.")
+               new_name=input("Enter new name: ").strip().lower()
+               new_age=int(input("Enter new age: ")).strip()
+               new_email=input("Enter new email: ").strip().lower()
+               new_active=input("Is the client active? (yes/no): ").strip().lower()
 
 
-
-
-
-     
-                
-
-
-
+            
+               
+          else:
+               print("Client not found.")   
+               return
